@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+ 
+}
+body {
+     background-image: url("../images/lake.jpeg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+    
+}
+header {
+    padding: 20px;
+    height: 300px;
+    background-color: rgb(210, 206, 206);
+    text-align: center;
+}
+section ul {
+ 
+    text-align: center;
+
+}
+.main-title {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+    
+}
+.biography-pic {
+    border: 5px solid #555 ;
+    width: 180px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
+}
+
+.title {
+    text-align: center;
+}
+
+
+
+section footer {
+    display: flexbox;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+    
+}
