@@ -1,3 +1,3 @@
-function last_updated() {
-    document.getElementById("last-updated").innerHTML =  "Last updated: " + new Date(document.lastModified);
-}
+
+    var lastChange = document.lastModification;
+    document.getElementById("last-updated").innerHTML =  "Last updated: " + lastChange;
