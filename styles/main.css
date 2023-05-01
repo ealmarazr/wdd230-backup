@@ -1,51 +1,118 @@
-* {
-    margin: 0;
-    padding: 0;
- 
+/** May-01-23
+/** variables globales */
+:root {
+    --primary:#ddd;
+    --dark:#048;
+    --light:#99c24d;
+    --fondo:#f67c03;
+    --shadow: 3px 3px 9px rgba(44, 25, 25, 0.9);
 }
-body {
-     background-image: url("../images/lake.jpeg");
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center center;
+html {
+    background-color: var(--primary);
+
+}
+#page {
+    padding-top: 20px;
+    display: grid;
+    width: 80%;
+    height: 250px;
+    grid-template-areas: 
+        ". stitle stitle"
+        ". tc tc"
+        ". lessons lessons"
+        ". foot foot";
+        grid-template-rows: 250px 1fr 1fr 30px;
+        grid-template-columns: 1fr 150px 1fr;
+}
+
+#page > stitle {
+    grid-area: stitle;   
+}
+
+#page > tc {
+    grid-area: tc;
+    background-color: var(--primary);
+    text-align: left;
+    font-size: .8em;
+    color: var(--dark);
+    text-shadow: var(--shadow);
+    padding-left: 15px ;
+  
     
 }
-header {
-    padding: 20px;
-    height: 300px;
-    background-color: rgb(210, 206, 206);
-    text-align: center;
-}
-section ul {
- 
-    text-align: center;
-
-}
-.main-title {
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    
+#page > lessons {
+    grid-area: lessons;
+    background-color: var(--primary);
     
 }
-.biography-pic {
-    border: 5px solid #555 ;
-    width: 180px;
-    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
-}
 
-.title {
-    text-align: center;
+#page > foot {
+    grid-area: foot;
+    
 }
 
 
+.my-pic {
+    border: 5px solid rgb(171, 172, 176) ;
+    width: 150px;
+    height: 200px;
+    background-image: url(../images/ear.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
 
-section footer {
+}
+
+.my-info {
+    display: grid;
+    grid-template-columns: 225px 25px 1fr;
+    grid-template-rows: 250px;
+    background-color: var(--dark);
+    padding-left: 10px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+
+}
+.my-pic {
+    grid-column: 1;
+    padding: 10px 10px 10px 10px;
+    align-self: center;
+}
+
+.c h1 {
+    text-align:  center;
+    font-size: 30px;
+    text-shadow: var(--shadow);
+}
+.lista {
+    margin-inline: 40px;
+}
+.my-name {
+  
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: bold;
+    grid-column: 3;
+    padding-top: 100px;
+    color: var(--primary);
+
+}
+
+.footer {
     display: flexbox;
-    background-color: blue;
-    color: white;
+    background-color: var(--dark);
+    color: var(--primary);
     padding: 20px;
     text-align: center;
-    
-    
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+       
+}
+
+/* media queries */
+@media (max-width:700px) {
+    .main-name h1 {
+        font-size: 1.5rem;
+    }  
 }
