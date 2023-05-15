@@ -1,0 +1,44 @@
+.wrap {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 200px 600px, auto;
+    background-color: #ffff;
+    color: #444;
+}
+
+
+
+
+/* tablet */
+.my-info my-pic {
+
+}
+.my-info {
+    grid-column: 2 / 4;
+    color: #ffff;
+    text-align: right   ;
+}
+
+.title-class {
+    grid-column: 2 / 4;
+    grid-row 2;
+}
+;
+.lista {
+    grid-column: 2 / 4;
+    grid-row: 3
+    grid-row: auto;
+}
+
+@media only screen and (max-width: 750px) {
+    #page .my-info {
+        display: flex; 
+        box-sizing: border-box;
+    }
+
+    .my-name {
+        font-size: 15px;
+        background-color: blue;
+    }
+}
