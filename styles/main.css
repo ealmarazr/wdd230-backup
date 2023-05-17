@@ -91,19 +91,3 @@ html {
     box-shadow: var(--shadow);
        
 }
-
-/* media queries */
-@media (max-width:800px) {
-    .header {
-        grid-template-areas: 
-        '. img  .'
-        '. name .';
-    }
-    .name > h1 {
-        font-size: 20px;
-    } 
-
-    .title-c > h1 {
-        font-size: 20px;
-    }
-}
