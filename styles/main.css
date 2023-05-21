@@ -1,4 +1,4 @@
-/** May-17-23
+/** May-20-23
 /** variables globales */
 :root {
     --primary:#ddd;
@@ -11,12 +11,22 @@ html {
     background-color: var(--primary);
 
 }
+
+body {
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 250px 100px 500px 100px;
+}
+
 .header {
+    grid-column: 2;
+    position: relative;
+    
     display: grid;
     grid-template-columns: 1fr .75fr 1.25fr 1fr;
     grid-template-rows: repeat(1, 200px);
     grid-template-areas: 
-      '. img name .'
+      'left-blk img name name'
     
 }
 
@@ -26,6 +36,7 @@ html {
     box-shadow: var(--shadow);
     align-items: center;
 } 
+ 
 .header > img {
     grid-area: img;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);;
@@ -46,26 +57,24 @@ html {
 .name > h1 {
     font-size: 1.5rem ;
 }
-.main {
-    position: inherit;
-    padding-top: 20px;
-    display: grid;
-    max-width: 960px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(1fr .5fr 3fr .5fr);
-    grid-template-areas: 
-        '. title-c title-c .'
-        '. lessons lessons .'
-        '. foot    foot    .';
-}
+
 
 .title-c {
-    grid-area: title-c;
+  /*  grid-area: title-c; */
+  grid-column: 2;
+  grid-row: 2;
 }
 
+.line {
+    border: .6px solid rgb(11, 60, 123);
+}
 .lessons {
-    grid-area: lessons;
+  /*  grid-area: lessons; */
+    grid-column: 2;
+    grid-row: 3;
     background-color: var(--primary);
+    font-size: 1.2em;
+    
 }
 
 
@@ -82,12 +91,43 @@ html {
 
 
 .foot {
-    grid-area: foot;
+ /*  grid-area: foot;*/
+    grid-column: 2;
+    grid-row: 4;
     background-color: var(--dark);
     color: var(--primary);
     padding: 20px;
     text-align: center;
     border-radius: 15px;
     box-shadow: var(--shadow);
+    font-size: 1.2em;
        
+}
+
+/* media queries */
+@media (max-width:800px) {
+    .header {
+        grid-template-areas: 
+        '. img  .'
+        'name name name'; 
+        
+    }
+
+    .header .name h1 {
+     /*   grid-column: 2; */
+        font-size: 14px; 
+        text-align: center;
+    } 
+
+    .title-c > h1 {
+        font-size: 1.3em;
+    }
+
+    .lessons{
+        font-size: .8em;
+    }
+
+    .foot {
+        font-size: .75;
+    }
 }

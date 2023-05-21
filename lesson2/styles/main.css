@@ -1,0 +1,91 @@
+/** May-17-23
+/** variables globales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --primary:#ddd;
+    --dark:#048;
+    --light:#99c24d;
+    --fondo:#048;
+    --dark:#f67c03;
+    --shadow: 3px 3px 9px rgba(44, 25, 25, 0.9);
+}
+
+
+
+.main {
+    display: grid;
+   /*  grid-template-columns: repeat(3,1fr); */
+   /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(1fr .2fr 3fr .5fr);
+    grid-template-areas: 
+        'header header header header header header'
+        '. card1 . card2 . card3'
+        ' foot foot   foot foot  foot foot';
+    grid-gap: 20px;
+}
+.header {
+    grid-area: header;
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.foot {
+    grid-area: foot;
+}
+
+.header {
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--primary);
+    font-family: 'Roboto', sans-serif;  
+}
+
+.main .card1{
+    margin: 0 auto;
+    width: auto;
+    background-color: var(--light);
+    border-radius: 2rem 2rem 0 0;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.main .card2{
+    margin: 0 auto;
+    width: auto;
+    background-color: var(--light);
+    border-radius: 1rem 1rem 0 0;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.main .card3{
+    margin: 0 auto;
+    width: auto;
+    background-color: var(--light);
+    border-radius: 1rem 1rem 0 0;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.foot{
+    background-color: var(--dark);
+    color: var(--primary);
+    padding: 20px;
+    text-align: center;
+  /*  box-shadow: var(--shadow);  */  
+}
