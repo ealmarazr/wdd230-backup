@@ -1,0 +1,128 @@
+/** May-22-2023
+/** variables globales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --primary:#ddd;
+    --dark:#048;
+    --light:#99c24d;
+    --fondo:#048;
+    --dark:#f67c03;
+    --shadow: 3px 3px 9px rgba(44, 25, 25, 0.9);
+}
+
+.header {
+    display: flex;
+   flex-direction:column;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: var(--light);
+    font-family: 'Roboto', sans-serif;  
+    box-shadow: var(--shadow);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    grid-template-rows: repeat(1fr .2fr 3fr .5fr);
+    grid-template-areas: 
+        'card1 card2 card3'
+        'card1 card2 card3'
+        'card1 card2 card3'
+        'card1 card2 card3';
+        
+    grid-gap: 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+.card1 img {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+}
+.card2 img {
+    height: 500px;
+    width: 350px;
+    object-fit: cover;
+}
+.title-of-card {
+    background-color: #048;
+    color: beige;
+    border: 2px solid #048;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.title-of-card h2 {
+    background-color: #048;
+    align-items: center;
+}
+.wrapper .card1, .wrapper .card2, .wrapper .card3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 50px 500px 100px;
+    background-color: rgb(234, 240, 179);
+
+}
+
+p {
+    grid-row: 5;
+    font-size: .8em;
+}
+
+.image-card {
+    grid-row: 4;
+    grid-column: 1;
+    object-fit: cover;
+    margin: auto;
+
+}
+
+
+.wrapper .card1, .card2, .card3 {
+    box-shadow: var(--shadow);
+}
+
+.wrapper .card1 h3, .card2 h3, .card3 h3, .text-card {
+    color: black;
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.foot {
+    grid-area: foot;
+}
+
+
+.wrapper .card1, .card2, .card3{
+   
+   /* margin: 0 auto; */
+    width: 1fr;
+    padding: 1rem;
+    color: var(--dark);
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    grid-gap: 10px;
+    border: #242b16 2px;
+  
+}
+
+.foot{
+    background-color: var(--light);
+    color: black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--shadow);   
+}

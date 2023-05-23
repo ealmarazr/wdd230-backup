@@ -1,0 +1,34 @@
+@media (max-width: 550px) {
+
+
+
+    .wrapper {
+        grid-template-columns: repeat(1, 1fr );
+        grid-template-areas: 
+        'card1'
+        'card1'
+        'card1'
+        'card1'
+        'card2'
+        'card2'
+        'card2'
+        'card2'
+        'card3'
+        'card3'
+        'card3'
+        'card3';
+    }
+    .wrapper {
+        align-items: center;
+    }
+    .image-card img {
+        width: auto;
+        height: 500px;
+        object-fit: cover;
+    }
+    
+    body {
+        background-color: rgb(155, 254, 198);
+    }
+    
+    }
