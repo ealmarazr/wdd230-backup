@@ -144,13 +144,7 @@ nav {
 nav div {
   flex: 1 1 auto;
 }
-/*
-nav  {
-  list-style-type: none;
-  display: flex;
-  
-}
-*/
+
 
 nav a {
   padding:1em;
@@ -211,4 +205,17 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+@media (max-width:700px){
+  nav {
+    flex-direction: column;
+  }
+
+  #logo-link {
+    display: block;
+  }
+  header h1 {
+    font-size: 25px ;
+  }
 }
