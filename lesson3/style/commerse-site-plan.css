@@ -2,14 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 :root {
-  /* change the values below to your colors from your palette */
+ 
   --primary-color: #f16d01  ;
   --secondary-color: #99C24D ;
   --accent1-color: #048BA8;
   --accent2-color: #2F2D2E;
 
-  /* change the values below to your chosen font(s) */
-  --heading-font:'Roboto condensed', sans-serif;
+   --heading-font:'Roboto condensed', sans-serif;
   --font-family: 'Roboto Condensed', sans-serif;
   --paragraph-font: 'Roboto condenced', sans-serif;
 
@@ -19,7 +18,6 @@
   --paragraph-color-on-white: #f16d01; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: var(--primary-color) ;
-  /*--nav-link-color: hsl(202, 44%, 96%); */
   --nav-link-color: var(--accent2);
   --nav-background-color:var(--accent1-color);
   --nav-hover-link-color: #048ba8;
@@ -66,12 +64,16 @@ header {
   flex-direction: row;
   justify-content: space-between;
   font-style: italic;
+  border-radius: 5px;
+  box-shadow: 0 0 30px #333;
+
 
 }
 
 header > h1 {
   color: #2F2D2E;
-  border-radius: 10px;
+  border-radius: 5px;
+  font-size: 1.7em;
 }
 
 header > h2 {
@@ -129,27 +131,42 @@ p.colored {
 nav {
  /* background-color: var(--nav-background-color); */
   background-color: #2F2D2E;
-  line-height: 3em;
   text-align: center;
+  line-height: 3em;
   font-size: 1.2em;
+  box-shadow: 0 0 30px #333;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
 }
+
+nav div {
+  flex: 1 1 auto;
+}
+/*
 nav  {
   list-style-type: none;
   display: flex;
   
 }
+*/
+
 nav a {
   padding:1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
 }
+
 nav a:link, nav a:visited {
   /*color of the text*/
   color: var(--accent2-color);
 }
+
 nav a:hover {
-  color: var(--nav-hover-link-color);
+ 
+  color:white;
   background-color: var(--accent2-color);
 }
 .sitemap {
