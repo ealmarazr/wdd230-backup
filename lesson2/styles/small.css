@@ -1,7 +1,4 @@
 @media (max-width: 550px) {
-
-
-
     .wrapper {
         grid-template-columns: repeat(1, 1fr );
         grid-template-areas: 
@@ -23,10 +20,11 @@
     }
     .image-card img {
         width: auto;
-        height: 500px;
+        height: 700px;
         object-fit: cover;
     }
     
+
     body {
         background-color: rgb(155, 254, 198);
     }
