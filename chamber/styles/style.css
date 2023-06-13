@@ -221,7 +221,7 @@ nav ul {
     grid-area:content4;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, min-max(300px, 1fr));
+    grid-template-columns: min-max(100px, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
     
     grid-gap: 40px;
@@ -232,12 +232,12 @@ nav ul {
   }
 
   
-  .content-4 .content4-a{
+  .content-4 #content4-a{
     grid-area: content4-a;
     grid-row: 1;
     grid-column: 1;
     margin-block: 10px;
-   /* border:1px solid #5d5e5c; */
+    border:1px solid #5d5e5c; 
     border-radius: var(--radius);
     font-family: 'Courier New', Courier, monospace;
    /* padding-top: 5px 5px 0 5px; */
