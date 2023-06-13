@@ -1,6 +1,6 @@
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;500;600&family=PT+Sans&family=Roboto:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 :root {
@@ -12,8 +12,7 @@
   /* font(s) */
   --heading-font:'Roboto condensed', sans-serif;
   --font-family: 'Roboto Condensed', sans-serif;
-  --paragraph-font: 'Roboto condenced', sans-serif;
-
+  --paragraph-font: 'Fira Sans Condensed', sans-serif;
  
   --headline-color-on-white: #2e4057;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
@@ -57,6 +56,7 @@ nav {
   margin-bottom: 20px;
   font-size: 1.6em;
 
+
  
 }
 
@@ -89,9 +89,11 @@ nav ul {
     background-color: #f16d01;
   }
   .main-title {
-    font-family: fontello;
+    
     font-weight: 800;
     text-align: center;
+    font-family:'Roboto condensed', sans-serif;
+
   }
   main {
     margin-left: 5%;
@@ -100,8 +102,8 @@ nav ul {
   }
 
   main {
-    font-family:"inter", sans-serif;
-    font-weight:800;
+   /* font-family:"inter", sans-serif;
+    font-weight:800; */
     text-align:center;
     display: grid;
     grid-template-columns:repeat(3, 1fr);
@@ -111,8 +113,8 @@ nav ul {
     grid-column-gap: 10px;
     grid-row-gap:15px;
     grid-template-areas:
-      "event content3 content4"
-      "content5 content3 content4"
+      "event    content3    content4"
+      "content5 content3    content4"
       "content7 new-release content4"
   }
 
@@ -189,7 +191,11 @@ nav ul {
     max-width: 100%;
     height:auto;
   }
-
+.address{
+  text-align: center;
+  font-size: .8rem;
+  color:#2e4057;
+}
   .event{
   background:#c9263d;
     border-radius: var(--radius);
@@ -201,32 +207,39 @@ nav ul {
     border-radius: var(--radius);
     grid-area:content3;
   }
-  
+  #styledimg{ 
+  /*  background-image: url(../images/atlante.png);
+    background-repeat: no-repeat;
+    z-index: 100;
+    opacity: .4;
+    position: relative;*/
+  }
+
   .content4{
    /* background:#c9263f;*/
     border-radius: var(--radius);
     grid-area:content4;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, min-max(300px, 1fr));
     grid-template-rows: 1fr 1fr 1fr;
-    background-color:white;
-    border: 1px solid #5d5e5c;
+    
+    grid-gap: 40px;
+   /* background-color:rgb(186, 180, 180); */
+  /*  height: 40px; */
+   /* border: 1px solid #5d5e5c;*/
     position: relative;
   }
 
-  #styledimg{ 
-    background-image: url(../images/atlante.png);
-    background-repeat: no-repeat;
-    z-index: 1;
-    opacity: .6;
-    position: relative;
-  }
-  .content-4 content4-a{
+  
+  .content-4 .content4-a{
+    grid-area: content4-a;
     grid-row: 1;
     grid-column: 1;
     margin-block: 10px;
+   /* border:1px solid #5d5e5c; */
     border-radius: var(--radius);
+    font-family: 'Courier New', Courier, monospace;
    /* padding-top: 5px 5px 0 5px; */
   }
   .content4-b{
