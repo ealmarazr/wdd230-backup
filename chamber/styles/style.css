@@ -198,14 +198,23 @@ nav ul {
 
   .event{
   background:#c9263d;
-    border-radius: var(--radius);
+    border-radius: 40px;
     grid-area:event;
     opacity: .8;
+  }
+
+  .event .card1 h2 {
+    font-size:30px;
+  }
+  .event .event-title {
+    font-weight: 400;
+    color: #73ef0d;
   }
   .content3{
   background:#c9263d;
     border-radius: var(--radius);
     grid-area:content3;
+    
   }
   
   .content4{
@@ -239,6 +248,7 @@ nav ul {
     background-color: #72c123;
     padding-top: 5px 5px 0 5px;
     color:rgb(9, 9, 9);
+    
   }
   
   .content4 .content4-b{
