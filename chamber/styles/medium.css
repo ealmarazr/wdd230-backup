@@ -1,0 +1,27 @@
+@media only screen and (min-width:1024px){
+
+ /*   nav button{display: none;} */
+
+
+   
+ .primaryNav{
+    display: flex;
+    flex-direction: row;
+}
+
+.primaryNav li:first-child {
+    display: none;
+}
+
+.primaryNav li{
+    display: block;
+    flex: 1 1 100%;
+}
+.content1 .main-title {
+    font-family: fontello; 
+     font-weight: 600;
+     font-size: .8rem;
+     text-align: center;
+   }
+
+}

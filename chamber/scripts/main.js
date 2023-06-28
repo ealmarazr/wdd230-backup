@@ -19,8 +19,5 @@ document.getElementById('today-is').innerHTML = "12345";
 /* end of data*/
 
 function toggleMenu() {
-   document.getElementById("primaryNav").classList.toggle("open");
+   document.getElementsByClassName("primaryNav")[0].classList.toggle("responsive");
 }
-
-const x = document.getElementById('hamburgerBtn');
-x.onclick = toggleMenu;

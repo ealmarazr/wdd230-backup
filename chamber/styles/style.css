@@ -66,9 +66,7 @@ h2 {
 
   }
 */
-.main-title .menu{
-margin-bottom: -40px;
-}
+
 
 nav {
  
@@ -77,7 +75,6 @@ nav {
   text-align: center;
   box-shadow:0 2px 15px gray;
   font-size:1.4em;
-  
   margin-bottom: 0px;
   font-family: 'Cinzel',serif;
   justify-content: space-around;
@@ -89,39 +86,14 @@ nav ul{
   margin: 0;
   padding: 20px;
   overflow: hidden;
-  display: flex;
+  /*display: flex;*/
   text-align:center;
-  flex-direction: row;
+ /* flex-direction: row;*/
   list-style-type:none;
   justify-content:space-around;
   
 }
 
-/*
-#primaryNav ul {
-    display: flex; 
-    flex-direction: row;
-    list-style-type: none;
-    text-align: center;
-    padding: 10px;
-    justify-content: space-between;
-}
-
-/*
-
-#primaryNav li a{
-  padding: .75rem;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
-
-}
-
-.options nav ul li{
-  display: inline-block;
-  text-shadow: 0 0 15px;
-}
-*/
 
 .menu nav ul li a{
   display: block;
@@ -133,15 +105,16 @@ nav ul{
   text-transform: uppercase;
 }
 
-#primaryNav a:hover {
+.primaryNav a:hover {
   background-color: #f16d01;
 }
+
 
 /* end nav part */
 
 
-.main-title {
-  font-family: fontello;
+.content1 .main-title {
+ font-family: fontello; 
   font-weight: 800;
   text-align: center;
 }
@@ -174,7 +147,8 @@ main {
   object-fit: cover;
   background-size: cover;
   max-inline-size: 100%;
-
+  margin-left: .5em;
+  margin-top:  .5em;
 
 }
 
