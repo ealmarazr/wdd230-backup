@@ -20,8 +20,48 @@
 .content1 .main-title {
     font-family: fontello; 
      font-weight: 600;
-     font-size: .8rem;
+     font-size: .6rem;
      text-align: center;
    }
+   
+   main { 
+    display: grid;
+    grid-template-areas:
+"content3    content3    content3"
+"new-release new-release new-release"
+"content4    content4    content4"
+"content7    content7    content7"
+"event        .           content5";
+
+
+} .showcase3 {
+    grid-area: content3;
+    background: url(../images/camping.jpg) center center;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    box-shadow: var(--shadow); 
+    overflow: hidden;
+    
+}
+
+
+
+.showcase3 h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0;
+    color: white;
+    background-color: limegreen;
+    text-shadow: 2px 2px #474242
+    
+    
+}
+
+
 
 }

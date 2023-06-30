@@ -1,5 +1,5 @@
 @media screen and (min-width:1200px){
-   
+  
     .primaryNav{
         display: flex;
         flex-direction: row;
@@ -19,4 +19,59 @@
          font-size: 1rem;
          text-align: center;
        }
+    main {
+    display: grid; 
+    grid-template-areas:
+    "event    content3    content4"
+    "content5 content3    content4"
+    "content7 new-release content4";
+    }
+
+    .showcase3 {
+        grid-area: content3;
+        background: url(../images/tolantongo.jpg) center center;
+        height: 87%;
+        background-size: cover;
+        background-position: center;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        box-shadow: var(--shadow); 
+        overflow: hidden;
+        
+    }
+    
+
+
+    .showcase3 h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0;
+        color: white;
+        background-color: limegreen;
+        text-shadow: 2px 2px #474242
+        
+        
+    }
+
+
+    .showcase-events {
+        grid-area: event;
+        min-height: auto;
+        background: url(../images/pasty.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        box-shadow: var(--shadow); 
+        z-index:10 ;
+    }
+    /******/
+
+
+     
 }
