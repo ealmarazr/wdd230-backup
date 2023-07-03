@@ -72,6 +72,14 @@
     }
     /******/
 
-
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "sub-title     sub-title"
+        "personal-info membership-level"
+        "address       type-of-payment";
+      }
      
 }

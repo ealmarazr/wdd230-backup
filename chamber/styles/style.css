@@ -38,6 +38,7 @@ body {
   font-family:'Arima',cursive;
 }
 
+
 .button1 { /* .button1 */
   display: inline-block;
   padding: 5px 20px 10px 20px;
@@ -53,6 +54,17 @@ body {
   cursor: pointer;
 }
  
+
+.primary-nav2{
+display: flex;
+flex-direction: row;
+}
+
+.join-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
 .set-button{
   display: flex;
   flex-direction: flex-end;
@@ -390,4 +402,73 @@ main {
 
     .options nav ul li a {
     font-size: 1rem;  
+    }
+/***** form fields *****/
+
+
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+    }
+
+    fieldset {
+      border-color: orange;    
+    }
+/*
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "sub-title     sub-title"
+      "personal-info membership-level"
+      "address       type-of-payment";
+    }
+
+    */
+
+   body{
+      background-color: #adb0ad;
+      
+    }
+    .tag{
+      align-items:flex-start;
+    }
+
+    .tag input {
+      width: 400px;
+    }
+    .tag input{
+      font-size: 1rem;
+      border-radius: 5px;
+      padding: .5rem;
+    }
+
+    form h3 {
+      grid-area: sub-title;
+    }
+
+    form h3{
+      font-size: 2em;
+    }
+    #personal-info {
+      grid-area:
+        personal-info
+      }
+    #address{
+      grid-area: address;
+    }
+
+    #membership-level{
+      grid-area: membership-level;
+    }
+
+    #type-of-payment{
+      grid-area: type-of-payment;
+    }
+
+    tbody tr:nth-child(even){
+      background-color: #b2e48a;
     }

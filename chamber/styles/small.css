@@ -50,7 +50,8 @@
     "content4 content4 content4"
     "content7     content7   content7";
       }
-    } .showcase3 {
+    
+     .showcase3 {
         grid-area: content3;
         background: url(../images/pasty.jpg) center center;
         height: 70%;
@@ -78,6 +79,17 @@
         
     }
     
+    form {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "sub-title"
+      "personal-info"
+      "address"
+      "membership-level"
+      "type-of-payment";
+    }
     
 
        
