@@ -82,20 +82,6 @@ h2 {
   grid-template-rows: auto;
 }
 
-/*Navigation part */
-/*nav{
-  
-  margin: 0 auto;
-  background-color:#36454f;
-  display: block;
-  box-shadow:0 2px 15px gray;
-  font-size:1.4em;
-  font-family: 'Cinzel',serif;
-  justify-content: space-around;
-  list-style-type: none;
-
-  }
-*/
 
 
 nav {
@@ -169,12 +155,7 @@ main {
   border-radius: var(--radius);
   grid-column-gap: 10px;
   grid-row-gap:15px;
-  /*
-  grid-template-areas:
-    "event    content3    content4"
-    "content5 content3    content4"
-    "content7 new-release content4";
-    */
+  
 }
 
 .logo {
@@ -223,19 +204,7 @@ main {
   
 }
 
-/*
-.follow-us #date-time {
-  grid-row: 1;
-  grid-column: 1 / span 3;
-  font-size: small;
-  font-family: fontello;
-  font-weight: 800;
-  background-color: var(--accent1-color);
-  text-align: center;
-  padding-top: 20%;
-  
-}
-*/
+
 .icons-fb{
   grid-area: icons-fb;
   
@@ -369,6 +338,13 @@ main {
       grid-area:content7;
     }
 
+    .content7{
+      font-weight: 800;
+      color: black;
+      font-size: 1.5em;
+      margin-top: 30px;
+    }
+
   .new-release{
     background:orange;
     border-radius: var(--radius);
@@ -416,18 +392,7 @@ main {
     fieldset {
       border-color: orange;    
     }
-/*
-    form {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      grid-template-areas: 
-      "sub-title     sub-title"
-      "personal-info membership-level"
-      "address       type-of-payment";
-    }
 
-    */
 
    body{
       background-color: #adb0ad;
