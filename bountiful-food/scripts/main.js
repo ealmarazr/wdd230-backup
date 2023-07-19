@@ -6,8 +6,9 @@ var today = new Date();
 let month = today.getMonth() + 1;
 let year  = today.getFullYear();
 let date  = today.getDate();
-let currentDate = `${month}/${date}/${year}`;
-/*document.getElementById("date-time").innerHTML = 'Date: ' + currentDate;*/
+/*let currentDate = `${month}/${date}/${year}`;*/
+let currentDate = today;
+document.getElementsById("date-time").innerHTML = 'Today is ' + currentDate;
 
 function toggleMenu() {
     document.getElementsByClassName("primaryNav")[0].classList.toggle("responsive");
