@@ -39,7 +39,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-/*const urlWeather = 'https://api.openweathermap.org/data/2.5/forecast?q=west+valley+city%2c+utah&appid=e8c19ed7cb78943327233854cb02396c';*/
+
 const urlWeather = 'west-valley.json';
 async function apiFetch() {
     try {
