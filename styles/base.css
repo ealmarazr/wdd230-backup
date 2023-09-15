@@ -1,0 +1,137 @@
+
+:root {
+    --primary:#ddd;
+    --dark:#048;
+    --light:#99c24d;
+    --fondo:#f67c03;
+    --shadow: 3px 3px 9px rgba(44, 25, 25, 0.9);
+}
+html {
+    background-color: var(--primary);
+
+}
+
+body {
+  /*  display:grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 250px 100px 500px 100px;
+*/
+display: flex;
+flex-direction: column;
+}
+
+.header {
+    grid-column: 2;
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: 1fr .75fr 1.25fr 1fr;
+    grid-template-rows: repeat(1, 200px);
+    grid-template-areas: 
+      'left-blk img name name'
+    
+}
+
+.header {
+    background-color: #048;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    align-items: center;
+} 
+ 
+.header > img {
+    grid-area: img;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);;
+    width: 100px;
+    max-width: 100px;
+    padding: 10px 10px 10px 10px; 
+
+}
+
+.header .name {
+    grid-area: name;
+    text-align: center;
+    background-color: var(--dark); 
+    color:var(--primary);
+
+}
+
+.name > h1 {
+    font-size: 1.2rem ;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li h3 a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "fontello";
+    font-weight:600;
+}
+.title-c {
+  /*  grid-area: title-c; */
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.line {
+    border: .6px solid rgb(11, 60, 123);
+}
+
+
+
+.title-c {
+    background-color: var(--primary);
+    text-align: left;
+    font-size: 1rem;
+    color: var(--dark);
+    text-shadow: var(--shadow);
+    padding-left: 15px ;
+  
+    
+}
+
+
+.foot {
+ /*  grid-area: foot;*/
+    grid-column: 2;
+    grid-row: 4;
+    background-color: var(--dark);
+    color: var(--primary);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    font-size: 1.2em;
+       
+}
+
+/* media queries */
+@media (max-width:800px) {
+    .header {
+        grid-template-areas: 
+        '. img  .'
+        'name name name'; 
+        
+    }
+
+    .header .name h1 {
+     /*   grid-column: 2; */
+        font-size: 14px; 
+        text-align: center;
+    } 
+
+    .title-c > h1 {
+        font-size: 1.3em;
+    }
+
+    .lessons{
+        font-size: .8em;
+    }
+
+    .foot {
+        font-size: .75;
+    }
+}
