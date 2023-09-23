@@ -1,6 +1,7 @@
 @media screen and (min-width:700px){
 .wrap {
-  flex-direction: inline-block;
+ /* flex-direction: inline-block; */
+ flex-direction: row;
 }
  
 .options nav ul {
