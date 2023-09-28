@@ -14,4 +14,5 @@ document.getElementById("currentYear").innerHTML = year;
 
 function toggleMenu() {
    document.getElementsByClassName("primaryNav")[0].classList.toggle("responsive");
+   
 }
