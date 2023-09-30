@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+main .hero{
+    margin:0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 100%;
+    background: #000;
+    animation: fade 15s;
+    height: auto;
+}
+
+.foot {
+    /*  grid-area: foot;*/
+
+       background-color: var(--dark);
+       color: var(--primary);
+       padding: 20px;
+       text-align: center;
+       border-radius: 15px;
+       box-shadow: var(--shadow);
+       font-size: 1.2em;
+          
+   }
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

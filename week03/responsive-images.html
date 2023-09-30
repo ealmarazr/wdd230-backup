@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <meta name="description" content="Responsive Images">
+    <meta name="author" content="Esteban Almaraz Reyes">
+    <link rel="stylesheet" href="styles/responsive-images.css"> 
+</head>
+<body>
+    <header>
+        <h1>Responsive images</h1>
+    </header>
+    <main>
+        <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width:500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width:1000px)">
+            <img src="images/hero-large.webp" alt="hero photo" width="500" height="250">
+            <span>Responsive images</span>
+        </picture>
+        </div>
+    </main>
+    <footer>
+
+            <div class="foot"> 
+              <span>&copy<span id="currentYear"></span> </span>; Esteban Almaraz .:|:. Salt Lake City, Utah, USA </span>
+              <div id="last-updated"></div>
+            </div>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+    
+</body>
+</html>
