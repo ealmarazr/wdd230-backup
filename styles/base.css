@@ -7,12 +7,16 @@
     --shadow: 3px 3px 9px rgba(44, 25, 25, 0.9);
 }
 
+<<<<<<< HEAD
 * {
     margin-left: 10%;
     margin-right: 10%;
     padding: 0;
 
 }
+=======
+
+>>>>>>> 0f9e55550c6b8fc33391d1f92c27c7f8f33fd466
 html {
     background-color: var(--primary);
 
@@ -56,6 +60,7 @@ html {
 
 }
 
+<<<<<<< HEAD
 .primaryNav{
   display: flex;
   flex-direction: column;
@@ -70,13 +75,20 @@ html {
 .primaryNav li{
   display: none;
 }
+=======
+
+>>>>>>> 0f9e55550c6b8fc33391d1f92c27c7f8f33fd466
 nav {
   
     background-color: #36454f;
   /*  text-align: center;*/
     box-shadow: 0 2px 15px gray;
+<<<<<<< HEAD
   /*  margin-top: 30px;
     margin-bottom: 30px;*/
+=======
+  
+>>>>>>> 0f9e55550c6b8fc33391d1f92c27c7f8f33fd466
   }
     nav ul {
       margin: 0;
@@ -86,11 +98,15 @@ nav {
   
   
   .options nav ul li a {
+      display: block;
       color: #fff;
       text-align: center;
       padding: .75rem;
       text-decoration: none;
+<<<<<<< HEAD
       font-size: .5rem;
+=======
+>>>>>>> 0f9e55550c6b8fc33391d1f92c27c7f8f33fd466
       text-transform: uppercase;
     }
   
@@ -100,9 +116,15 @@ nav {
     
     img {
         display: block;
+<<<<<<< HEAD
         margin-left: auto;
         margin-right: auto;
         width: 80%;
+=======
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+>>>>>>> 0f9e55550c6b8fc33391d1f92c27c7f8f33fd466
       }
 
 
@@ -159,7 +181,10 @@ ul li h3 a{
     font-size: 1.2em;
        
 }
+<<<<<<< HEAD
 
 .responsive li{
   display: block;
 }
+=======
+>>>>>>> 0f9e55550c6b8fc33391d1f92c27c7f8f33fd466
