@@ -1,19 +1,45 @@
 @media screen and (min-width:700px){
-.wrap {
- /* flex-direction: inline-block; */
- flex-direction: row;
+
+  * {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  .primaryNav li{
+    display: block;
+    flex:1 1 100%;
+
+  }
+  .primaryNav li:first-child{
+    display: none;
+  }
+
+
+
+  .primaryNav{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+    color:white;
+  }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
  
 .options nav ul {
  display: flex;
  flex-direction: inline-block;
- margin-left: 20%;
- margin-right: 20%;
+
 }
 
-.title-c {
-  margin-left: 20%;
-  margin-right: 20%;
-}
 
 }

@@ -45,7 +45,7 @@
     
      .showcase3 {
         grid-area: content3;
-        background: url(../images/pasty.jpg) center center;
+        background: url(../images/) center center;
         height: 70%;
         background-size: cover;
         background-position: center;

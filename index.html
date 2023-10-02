@@ -20,25 +20,43 @@
 <body>
    
 
+
     <header>
             <div class="header">
-                <img src="images/ear.png" alt="Esteban Almaraz">
+                <img src="images/ear.webp" alt="Esteban Almaraz">
                 <div class="name">
                     <h1>  Esteban Almaraz Reyes </h1>
                 </div> 
             </div>
     </header>
+     
+
     <div class="options">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+            <ul class="primaryNav" id="primaryNav">
+                <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="chamber/index.html">Chamber</a></li>
                 <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
                 <li><a href="#">Form</a></li>
             </ul>
         </nav> 
+   
     </div>
+    
+    
+       
+
+
     <main>
+        
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width:500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width:1000px)">
+            <img src="images/hero-large.webp" alt="hero photo"  
+             loading="lazy" decoding="async">
+        </picture>
+
             <div class="title-c">
                 <h2>WDD 230: Web Frontend Development</h2>
                 <div class="line"></div>
@@ -48,8 +66,7 @@
                 <ul>
                     <li><a href="week01/chamber-site-plan.html">Week 01: Layout | Media Query | JS Pen</a></li>
                     <li><a href="week02/design.html">Week 02:Web Design Principles</a></li>
-                    <li><a href="week03/images/landscape.webp">Week 03:WebP</a></li>
-                    <li><a href="week03/lazyload.html">Week 03:Lazyload</a></li>
+                    <li><a href="week03/images/landscape.webp">Week 03:WebP </a><a href="week03/lazyload.html">|Lazyload</a></li>
                     <li><a href="#">Week 04:</a></li>
                     <li><a href="#">Week 05:</a></li>
                     <li><a href="#">Week 06:</a></li>
@@ -69,7 +86,7 @@
 
     <footer>
         <div class="foot">
-                <span>&copy; <span id="currentYear"></span> | Esteban Almaraz | Salt Lake City, Utah, USA </span>
+                <span>&copy;<span id="currentYear"></span> | Esteban Almaraz | Salt Lake City, Utah, USA </span>
                 <div id="last-updated"></div>
         </div>
     </footer>
