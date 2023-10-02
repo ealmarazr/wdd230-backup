@@ -1,19 +1,24 @@
 @media screen and (min-width:700px){
-.wrap {
- /* flex-direction: inline-block; */
- flex-direction: row;
+
+  main {
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
  
 .options nav ul {
  display: flex;
  flex-direction: inline-block;
- margin-left: 20%;
- margin-right: 20%;
+
 }
 
-.title-c {
-  margin-left: 20%;
-  margin-right: 20%;
-}
 
 }
